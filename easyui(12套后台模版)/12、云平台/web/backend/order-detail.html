@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>订单管理</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/backend.css" rel="stylesheet">
+    <link href="../css/page/backend/order-detail.css" rel="stylesheet"></head>
+    <link href="../js/datepicker/css/bootstrap.css" rel="stylesheet">
+    <link href="../js/datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="../js/select2/css/select2.min.css" rel="stylesheet">
+<body>
+    <div id="hd">
+        
+        <div class="header-nav">
+    <div class="navigation-inner">
+        <div class="logo">
+            <h1>
+                <a href="mgt_console.html" class="logo-img">云平台</a>
+            </h1>
+        </div>
+        <div class="header-categories" id="nav-con">
+            <ul class="menu">
+                <li class="menu-item selected">
+                    <h2>
+                        <a href="mgt_console.html">安全总览</a>
+                    </h2>
+                </li>
+                <li class="menu-item has-sub">
+                    <h2>
+                        <a href="cloud_service.html">云服务管理<i class="iconfont">&#xe61c;</i></a>
+                        
+                    </h2>
+                    
+                    <div class="menu-item-panel clearfix">
+                        
+                        <div class="submenu-col">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62d;</i>
+                                    <span>虚拟化安全服务</span>
+                                </h3>
+                                <ul>
+                                <li class="submenu"><a href="javascript:;">虚拟防火墙及入侵防御服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62f;</i>
+                                    <span>主机安全服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">漏洞检测服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62e;</i>
+                                    <span>安全测评和审计服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">系统源代码检测服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">系统上线安全测评</a></li>
+                                    <li class="submenu"><a href="javascript:;">APP安全服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="submenu-col col2">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62b;</i>
+                                    <span>Web安全防护</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">云WEB服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB仿篡改服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB漏洞检测服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB监测服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe630;</i>
+                                    <span>安全运维管理服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">基线核查服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">咨询服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">数据库审计服务</a></li>
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+                        
+
+                        <div class="submenu-col col3">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62c;</i>
+                                    <span>培训服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">CISP</a></li>
+                                    <li class="submenu"><a href="javascript:;">BCP</a></li>
+                                    <li class="submenu"><a href="javascript:;">prince2</a></li>
+                                    <li class="submenu"><a href="javascript:;">ISO20000审计师</a></li>
+                                    <li class="submenu"><a href="javascript:;">互联网+政务安全之个人信息保护</a></li>
+                                    <li class="submenu"><a href="javascript:;">党政机关工作人员上网安全及应知应会</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe648;</i>
+                                    <span>密码云安全服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">虚拟密码机VSM</a></li>
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+
+
+
+                    </div>
+
+                </li>
+                <li class="menu-item">
+                    <h2>
+                        <a href="assets.html">资产管理</a>
+                    </h2>
+                </li>
+            </ul>
+        </div>
+    
+
+        <div class="user-message">
+            <span class="label label-default">32</span>
+        </div>
+
+
+        <div class="login-user">
+            <i class="iconfont">&#xe60d;</i>
+            <a class="javascript:;">您好！市地税局管理员</a>
+            <i class="iconfont">&#xe61c;</i>
+
+            <div class="user-opt-panel">
+                <ul class="user-opt">
+                    <li>
+                        <a href="account_center.html">
+                            <i class="iconfont">&#xe60d;</i>
+                            <span class="pf-opt-name">账户信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order.html">
+                            <i class="iconfont">&#xe60c;</i>
+                            <span class="pf-opt-name">订单信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe60f;</i>
+                            <span class="pf-opt-name">结算信息</span>
+                        </a>
+                    </li>
+                    <li class="div-line">
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe60e;</i>
+                            <span class="pf-opt-name">资产信息</span>
+                        </a>
+                    </li>
+                    <li class="div-line">
+                        <a href="login.html">
+                            <i class="iconfont">&#xe60b;</i>
+                            <span class="pf-opt-name">退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+    <div id="bd">
+      <div class="main-wrap-bk clearfix">
+         <div class="sider-bar-bk">
+  <div class="sider-bar-hd">
+    <i class="iconfont">&#xe616;</i>
+    <span>云服务</span>
+   </div>
+   <ul class="sider-nav">
+     <li class="sider-nav-item current">
+       <h3>
+          <a href="javascript:;">
+             <i class="iconfont">&#xe610;</i>
+             <span>云服务总览</span>
+             <i class="iconfont arrow-right">&#xe611;</i>
+             <i class="iconfont arrow-down">&#xe615;</i>
+          </a>
+       </h3>
+       <ul class="sider-nav-s">
+         <li ><a href="order.html">订单管理</a></li>
+         <li  class="current"><a href="order-detail.html">订单详情</a></li>
+         <li><a href="order-handle.html">订单处理</a></li>
+       </ul>
+     </li>
+
+     <li class="sider-nav-item">
+       <h3>
+          <a href="javascript:;">
+             <i class="iconfont">&#xe613;</i>
+             <span>云检测预警</span>
+             <i class="iconfont arrow-right">&#xe611;</i>
+             <i class="iconfont arrow-down">&#xe615;</i>
+          </a>
+       </h3>
+       <ul class="sider-nav-s">
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+       </ul>
+     </li>
+   </ul>
+ </div>
+
+         <div class="bd-content-wrap">
+            <div class="bd-content">
+               <div class="title-left-line">订单管理</div>
+
+                <div class="order-detail page" data-tab="data-result">
+                   <div class="order-hd clearfix">
+                     <div class="kv-item">
+                       <div class="kv-label">订单编号：</div>
+                       <div class="kv-content num">862882332</div>
+                     </div>
+
+                     <button class="btn btn-red">
+                        <span>取消订单</span>
+                      </button>
+                   </div>
+
+                   <div class="order-basic clearfix">
+                     <div class="kv-item">
+                       <div class="kv-label">订单提交时间：</div>
+                       <div class="kv-content num">2016-04-02 12:23:03</div>
+                     </div>
+
+                     <div class="kv-item">
+                       <div class="kv-label">发票状态：</div>
+                       <div class="kv-content">
+                         <span class="warn">未申请</span>
+                         <a href="javascript:;">[索要发票]</a>
+                       </div>
+                     </div>
+
+                     <div class="cance-tip">合同及发票邮寄后不可取消订单</div>
+                   </div>
+
+
+                   <div class="more-info clearfix">
+                     <table>
+                       <colgroup>
+                          <col width="250"></col>
+                          <col width="180"></col>
+                          <col width="180"></col>
+                          <col width="150"></col>
+                          <col width="150"></col>
+                       </colgroup>
+                       <thead>
+                         <tr>
+                           <th>服务</th>
+                           <th>服务商</th>
+                           <th>服务终止日期</th>
+                           <th>单价（万元）</th>
+                           <th>总金额（万元）</th>
+                         </tr>
+                       </thead>
+
+                       <tbody>
+                         <td>安全漏洞扫描服务</td>
+                         <td>安恒</td>
+                         <td>2015-12-12 23:59:59</td>
+                         <td>2</td>
+                         <td>6</td>
+                       </tbody>
+                     </table>
+
+                     <div class="opt clearfix">
+                       <a href="javascript:;">查看服务详情</a>
+                       <a href="javascript:;">续订</a>
+                     </div>
+                   </div>
+
+
+                   <div class="other-info">
+                     <div class="kv-item clearfix">
+                       <div class="kv-label">合同及发票邮寄地址：</div>
+                       <div class="kv-content">江苏省南京市云龙路12121号</div>
+                     </div>
+
+                     <div class="kv-item clearfix">
+                       <div class="kv-label">联系人：</div>
+                       <div class="kv-content">孙先生</div>
+                     </div>
+
+                     <div class="kv-item clearfix">
+                       <div class="kv-label">联系方式：</div>
+                       <div class="kv-content">1844221121</div>
+                     </div>
+
+
+                     <div class="kv-item clearfix">
+                       <div class="kv-label">发票信息：</div>
+                       <div class="kv-content">
+                         <p>
+                            <span>发票类型：<span class="warn">普通发票</span></span>
+                         </p>
+
+                         <p>
+                           <span>发票抬头：<span class="warn">南京新天地发展有限公司</span></span>
+                         </p>
+                         
+                         
+                       </div>
+                     </div>
+
+                     <div class="kv-item clearfix">
+                       <div class="kv-label">订单状态：</div>
+                       <div class="kv-content">
+                          <p><a href="javascript:;">更新状态</a></p>
+                          <ul class="status">
+                            <li class="current">
+                                <i class="icon"></i>
+                                <span class="status-name">已邮寄</span>
+                                <span class="status-time">2016-04-02 16:58:01</span>
+                                <span class="status-name">admin</span>
+                            </li>
+                            <li>
+                                <i class="icon"></i>
+                                <span class="status-name">已支付</span>
+                                <span class="status-time">2016-04-02 16:58:01</span>
+                                <span class="status-name">admin</span>
+                            </li>
+                          </ul>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../js/datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.pagination.js"></script>
+    <script type="text/javascript" src="../js/select2/js/select2.min.js"></script>
+    <script type="text/javascript">
+
+        $("#starttime").datepicker({
+          "language":"zh-CN",
+          "format": 'yyyy-mm-dd'
+        })
+        $("#endtime").datepicker({
+            "language":"zh-CN",
+            "format": 'yyyy-mm-dd'
+        })
+        $(".date-pick .iconfont").click(function(){
+            $(this).prev().trigger("focus");
+        });
+
+        $('.pagin').pagination(200, {
+          current_page: 5,
+          items_per_page: 10,
+          callback: function(page, panel, evt){
+            
+            
+          }
+        });
+
+        $('table').on('click', 'a', function() {
+           $('.s-page').show();
+        });
+
+        $('.s-page').on('click', '.close-spage', function() {
+           $('.s-page').hide();
+        });
+
+        $('select').select2();
+
+        
+    
+    </script>
+</body>
+</html>

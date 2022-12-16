@@ -1,0 +1,653 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>云服务管理</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/backend.css" rel="stylesheet">
+    <link href="../css/page/backend/self.css" rel="stylesheet"></head>
+    <link href="../js/datepicker/css/bootstrap.css" rel="stylesheet">
+    <link href="../js/datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+<body>
+    <div id="hd">
+        
+        <div class="header-nav">
+    <div class="navigation-inner">
+        <div class="logo">
+            <h1>
+                <a href="mgt_console.html" class="logo-img">云平台</a>
+            </h1>
+        </div>
+        <div class="header-categories" id="nav-con">
+            <ul class="menu">
+                <li class="menu-item selected">
+                    <h2>
+                        <a href="mgt_console.html">安全总览</a>
+                    </h2>
+                </li>
+                <li class="menu-item has-sub">
+                    <h2>
+                        <a href="cloud_service.html">云服务管理<i class="iconfont">&#xe61c;</i></a>
+                        
+                    </h2>
+                    
+                    <div class="menu-item-panel clearfix">
+                        
+                        <div class="submenu-col">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62d;</i>
+                                    <span>虚拟化安全服务</span>
+                                </h3>
+                                <ul>
+                                <li class="submenu"><a href="javascript:;">虚拟防火墙及入侵防御服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62f;</i>
+                                    <span>主机安全服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">漏洞检测服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62e;</i>
+                                    <span>安全测评和审计服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">系统源代码检测服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">系统上线安全测评</a></li>
+                                    <li class="submenu"><a href="javascript:;">APP安全服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="submenu-col col2">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62b;</i>
+                                    <span>Web安全防护</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">云WEB服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB仿篡改服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB漏洞检测服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB监测服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe630;</i>
+                                    <span>安全运维管理服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">基线核查服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">咨询服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">数据库审计服务</a></li>
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+                        
+
+                        <div class="submenu-col col3">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62c;</i>
+                                    <span>培训服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">CISP</a></li>
+                                    <li class="submenu"><a href="javascript:;">BCP</a></li>
+                                    <li class="submenu"><a href="javascript:;">prince2</a></li>
+                                    <li class="submenu"><a href="javascript:;">ISO20000审计师</a></li>
+                                    <li class="submenu"><a href="javascript:;">互联网+政务安全之个人信息保护</a></li>
+                                    <li class="submenu"><a href="javascript:;">党政机关工作人员上网安全及应知应会</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe648;</i>
+                                    <span>密码云安全服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">虚拟密码机VSM</a></li>
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+
+
+
+                    </div>
+
+                </li>
+                <li class="menu-item">
+                    <h2>
+                        <a href="assets.html">资产管理</a>
+                    </h2>
+                </li>
+            </ul>
+        </div>
+    
+
+        <div class="user-message">
+            <span class="label label-default">32</span>
+        </div>
+
+
+        <div class="login-user">
+            <i class="iconfont">&#xe60d;</i>
+            <a class="javascript:;">您好！市地税局管理员</a>
+            <i class="iconfont">&#xe61c;</i>
+
+            <div class="user-opt-panel">
+                <ul class="user-opt">
+                    <li>
+                        <a href="account_center.html">
+                            <i class="iconfont">&#xe60d;</i>
+                            <span class="pf-opt-name">账户信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order.html">
+                            <i class="iconfont">&#xe60c;</i>
+                            <span class="pf-opt-name">订单信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe60f;</i>
+                            <span class="pf-opt-name">结算信息</span>
+                        </a>
+                    </li>
+                    <li class="div-line">
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe60e;</i>
+                            <span class="pf-opt-name">资产信息</span>
+                        </a>
+                    </li>
+                    <li class="div-line">
+                        <a href="login.html">
+                            <i class="iconfont">&#xe60b;</i>
+                            <span class="pf-opt-name">退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+    <div id="bd">
+      <div class="main-wrap-bk clearfix">
+         <div class="sider-bar-bk">
+  <div class="sider-bar-hd">
+    <i class="iconfont">&#xe616;</i>
+    <span>云服务</span>
+   </div>
+   <ul class="sider-nav">
+     <li class="sider-nav-item current">
+       <h3>
+          <a href="javascript:;">
+             <i class="iconfont">&#xe610;</i>
+             <span>云服务总览</span>
+             <i class="iconfont arrow-right">&#xe611;</i>
+             <i class="iconfont arrow-down">&#xe615;</i>
+          </a>
+       </h3>
+       <ul class="sider-nav-s">
+         <li><a href="cloud_service.html">云服务管理</a></li>
+         <li class="current"><a href="self.html">网站安全监测</a></li>
+         <li><a href="safe_protect.html">安全管家</a></li>
+         <li><a href="self-work.html">安全管家工作目录</a></li>
+       </ul>
+     </li>
+
+     <li class="sider-nav-item">
+       <h3>
+          <a href="javascript:;">
+             <i class="iconfont">&#xe613;</i>
+             <span>云检测预警</span>
+             <i class="iconfont arrow-right">&#xe611;</i>
+             <i class="iconfont arrow-down">&#xe615;</i>
+          </a>
+       </h3>
+       <ul class="sider-nav-s">
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+       </ul>
+     </li>
+   </ul>
+ </div>
+
+         <div class="bd-content-wrap">
+            <div class="bd-content">
+               <div class="title-left-line">网站安全监测
+                  <div class="service-status">
+                    <i class="iconfont">&#xe617;</i>
+                    <span class="info">服务状态：</span>
+                    <span class="status impInfo">试用</span>
+                    <button class="btn"><i class="iconfont">&#xe618;</i>购买</button>
+                 </div>
+               </div>
+
+               <ul class="nav-tabs clearfix">
+                  <li class="active"><a href="javascript:;">监测结果数据</a></li>
+                  <li><a href="javascript:;">监测服务记录</a></li>
+                </ul>
+
+                <div class="data-result page" data-tab="data-result">
+                  
+                  <div class="search-box">
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">时间范围：</div>
+                        <div class="form-content">
+                          <div class="date-pick">
+                            <input type="text" id="starttime" >
+                            <i class="iconfont">&#xe619;</i>
+                          </div>
+                          <span class="divsion">-</span>
+                          <div class="date-pick">
+                            <input type="text" id="endtime" >
+                            <i class="iconfont">&#xe619;</i>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">时间范围：</div>
+                        <div class="form-content">
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                          <label class="form-ck">
+                            <input type="checkbox" />
+                            web应用漏洞
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">时间状态：</div>
+                        <div class="form-content">
+                          <label class="form-ck">
+                            <input type="radio" />
+                            未处理
+                          </label>
+                          <label class="form-ck">
+                            <input type="radio" />
+                            已处理
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">事件名称：</div>
+                        <div class="form-content">
+                          <input type="text" class="name" placeholder="事件名称" />
+                          <button class="btn btn-blue search-btn">查询</button>
+                        </div>
+                      </div>
+
+                      
+                  </div>
+
+                  <div class="grid">
+                    <div class="grid-opt clearfix">
+                      <a class="grid-opt-item source" href="javascript:;">
+                        <i class="iconfont">&#xe61a;</i>
+                        <span>配置数据源</span>
+                      </a>
+                    </div>
+
+                    <table>
+                      <colgroup>
+                        <col width="50"></col>
+                        <col width="120"></col>
+                        <col width="*"></col>
+                        <col width="150"></col>
+                        <col width="150"></col>
+                        <col width="80"></col>
+                        <col width="100"></col>
+                        <col width="80"></col>
+                      </colgroup>
+
+                      <thead>
+                        <tr>
+                          <th>序号</th>
+                          <th>最近发生时间 <i class="iconfont up">&#xe61b;</i><i class="iconfont down current">&#xe61c;</i></th>
+                          <th>时间名称</th>
+                          <th>事件位置</th>
+                          <th>事件类型</th>
+                          <th>发生次数</th>
+                          <th>状态</th>
+                          <th>操作</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="num">1</td>
+                          <td>2016-04-02</td>
+                          <td>站点存在web应用漏洞</td>
+                          <td>-</td>
+                          <td>web应用漏洞</td>
+                          <td class="num">4</td>
+                          <td class="impInfo">未处理</td>
+                          <td><a href="javascript:;">处理</a></td>
+                        </tr>
+
+                      <tr>
+                          <td class="num">1</td>
+                          <td>2016-04-02</td>
+                          <td>站点存在web应用漏洞</td>
+                          <td>-</td>
+                          <td>web应用漏洞</td>
+                          <td class="num">4</td>
+                          <td class="impInfo">未处理</td>
+                          <td><a href="javascript:;">处理</a></td>
+                        </tr>
+
+                        <tr>
+                          <td class="num">1</td>
+                          <td>2016-04-02</td>
+                          <td>站点存在web应用漏洞</td>
+                          <td>-</td>
+                          <td>web应用漏洞</td>
+                          <td class="num">4</td>
+                          <td class="impInfo">未处理</td>
+                          <td><a href="javascript:;">处理</a></td>
+                        </tr>
+
+
+                        <tr>
+                          <td class="num">1</td>
+                          <td>2016-04-02</td>
+                          <td>站点存在web应用漏洞</td>
+                          <td>-</td>
+                          <td>web应用漏洞</td>
+                          <td class="num">4</td>
+                          <td class="impInfo">未处理</td>
+                          <td><a href="javascript:;">处理</a></td>
+                        </tr>
+
+
+                        <tr>
+                          <td class="num">1</td>
+                          <td>2016-04-02</td>
+                          <td>站点存在web应用漏洞</td>
+                          <td>-</td>
+                          <td>web应用漏洞</td>
+                          <td class="num">4</td>
+                          <td class="impInfo">未处理</td>
+                          <td><a href="javascript:;">处理</a></td>
+                        </tr>
+
+
+                        <tr>
+                          <td class="num">1</td>
+                          <td>2016-04-02</td>
+                          <td>站点存在web应用漏洞</td>
+                          <td>-</td>
+                          <td>web应用漏洞</td>
+                          <td class="num">4</td>
+                          <td class="impInfo">未处理</td>
+                          <td><a href="javascript:;">处理</a></td>
+                        </tr>
+
+                        <tr>
+                          <td class="num">1</td>
+                          <td>2016-04-02</td>
+                          <td>站点存在web应用漏洞</td>
+                          <td>-</td>
+                          <td>web应用漏洞</td>
+                          <td class="num">4</td>
+                          <td class="impInfo">未处理</td>
+                          <td><a href="javascript:;">处理</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="pagin pagination clearfix"></div>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+
+    <div class="s-page">
+        <a href="javascript:;" class="iconfont close-spage">&#xe61e;</a>
+
+        <div class="section">
+          <div class="title-left-line-b">事件流程处理</div>
+          <div class="section-content">
+            流程图暂缺
+          </div>
+        </div>
+        
+        <div class="section">
+          <div class="title-left-line-b">事件基本信息</div>
+          <div class="section-content">
+              <table class="kv-table">
+                <tbody>
+                  <tr>
+                    <td class="kv-label">
+                      事件名称
+                    </td>
+                    <td class="kv-content">
+                      站点存在web应用漏洞
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kv-label">
+                      事件续好
+                    </td>
+                    <td class="kv-content">
+                      1
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kv-label">
+                      事件位置
+                    </td>
+                    <td class="kv-content">
+                      http://www.ggg.gov.cn
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kv-label">
+                      事件单位
+                    </td>
+                    <td class="kv-content">
+                      市工信部
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="kv-label">
+                      发生次数
+                    </td>
+                    <td class="kv-content">
+                      5
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="kv-label">
+                      发生时间
+                    </td>
+                    <td class="kv-content">
+                      <p>2016-02-03 12:12:12</p>
+                      <p>2016-02-03 12:12:12</p>
+                      <p>2016-02-03 12:12:12</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="kv-label">
+                      状态
+                    </td>
+                    <td class="kv-content">
+                      <span class="impInfo">未处理</span>
+                    </td>
+                  </tr>
+                </tbody>
+                
+              </table>
+          </div>
+        </div>
+
+
+        <div class="section">
+          <div class="title-left-line-o">事件处理
+            <a class="opt-item" href="javascript:;">
+              <i class="iconfont">&#xe61d;</i>
+              <span>服务协助</span>
+            </a>
+          </div>
+
+          <div class="section-content">
+            <table class="kv-table">
+                <tbody>
+                  <tr>
+                    <td class="kv-label">
+                      处理类型
+                    </td>
+                    <td class="kv-content">
+                      <select>
+                        <option>请选择</option>
+                        <option>已处理</option>
+                        <option>未处理</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="kv-label">
+                      处理结果
+                    </td>
+                    <td class="kv-content">
+                      <textarea></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+                
+              </table>
+          </div>
+
+          <div class="btn-group">
+            <button class="btn btn-blue">提交</button>
+            <button class="btn">关闭</button>
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/layer/layer.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../js/datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.pagination.js"></script>
+    <script type="text/javascript">
+
+        $("#starttime").datepicker({
+          "language":"zh-CN",
+          "format": 'yyyy-mm-dd'
+        })
+        $("#endtime").datepicker({
+            "language":"zh-CN",
+            "format": 'yyyy-mm-dd'
+        })
+        $(".date-pick .iconfont").click(function(){
+            $(this).prev().trigger("focus");
+        });
+
+        $('.pagin').pagination(200, {
+          current_page: 5,
+          items_per_page: 10,
+          setPageNo:true,
+          setItems_per_page:true,
+          callback: function(page, pageItems,panel, evt){
+            console.log(page);
+             console.log(pageItems);
+            
+          }
+        });
+
+        $('table').on('click', 'a', function() {
+           $('.s-page').show();
+        });
+
+        $('.s-page').on('click', '.close-spage', function() {
+           $('.s-page').hide();
+        });
+
+
+        $('.source').click(function() {
+          layer.open({
+            type: 2,
+            title: "配置数据原",
+            area:['644px','480px'],
+            btn: ["提交","关闭"],
+            content: "http://www.baidu.com"
+          });     
+        });
+
+        //表格排序事件
+        $('thead').on('click','i',function(){
+          $(this).closest('thead').find('i').removeClass('current');
+          $(this).addClass('current');
+        });
+    
+    </script>
+</body>
+</html>

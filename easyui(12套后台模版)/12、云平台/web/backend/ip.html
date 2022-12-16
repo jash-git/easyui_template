@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>云服务管理</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/backend.css" rel="stylesheet">
+    <link href="../css/page/backend/ip.css" rel="stylesheet"></head>
+    <link href="../js/datepicker/css/bootstrap.css" rel="stylesheet">
+    <link href="../js/datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="../js/select2/css/select2.min.css" rel="stylesheet">
+<body>
+    <div id="hd">
+        
+        <div class="header-nav">
+    <div class="navigation-inner">
+        <div class="logo">
+            <h1>
+                <a href="mgt_console.html" class="logo-img">云平台</a>
+            </h1>
+        </div>
+        <div class="header-categories" id="nav-con">
+            <ul class="menu">
+                <li class="menu-item selected">
+                    <h2>
+                        <a href="mgt_console.html">安全总览</a>
+                    </h2>
+                </li>
+                <li class="menu-item has-sub">
+                    <h2>
+                        <a href="cloud_service.html">云服务管理<i class="iconfont">&#xe61c;</i></a>
+                        
+                    </h2>
+                    
+                    <div class="menu-item-panel clearfix">
+                        
+                        <div class="submenu-col">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62d;</i>
+                                    <span>虚拟化安全服务</span>
+                                </h3>
+                                <ul>
+                                <li class="submenu"><a href="javascript:;">虚拟防火墙及入侵防御服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62f;</i>
+                                    <span>主机安全服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">漏洞检测服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62e;</i>
+                                    <span>安全测评和审计服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">系统源代码检测服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">系统上线安全测评</a></li>
+                                    <li class="submenu"><a href="javascript:;">APP安全服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="submenu-col col2">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62b;</i>
+                                    <span>Web安全防护</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">云WEB服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB仿篡改服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB漏洞检测服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">WEB监测服务</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe630;</i>
+                                    <span>安全运维管理服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">基线核查服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">咨询服务</a></li>
+                                    <li class="submenu"><a href="javascript:;">数据库审计服务</a></li>
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+                        
+
+                        <div class="submenu-col col3">
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe62c;</i>
+                                    <span>培训服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">CISP</a></li>
+                                    <li class="submenu"><a href="javascript:;">BCP</a></li>
+                                    <li class="submenu"><a href="javascript:;">prince2</a></li>
+                                    <li class="submenu"><a href="javascript:;">ISO20000审计师</a></li>
+                                    <li class="submenu"><a href="javascript:;">互联网+政务安全之个人信息保护</a></li>
+                                    <li class="submenu"><a href="javascript:;">党政机关工作人员上网安全及应知应会</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="submenu-item">
+                                <h3>
+                                    <i class="iconfont">&#xe648;</i>
+                                    <span>密码云安全服务</span>
+                                </h3>
+                                <ul>
+                                    <li class="submenu"><a href="javascript:;">虚拟密码机VSM</a></li>
+                                </ul>
+                            </div>
+
+                            
+                        </div>
+
+
+
+                    </div>
+
+                </li>
+                <li class="menu-item">
+                    <h2>
+                        <a href="assets.html">资产管理</a>
+                    </h2>
+                </li>
+            </ul>
+        </div>
+    
+
+        <div class="user-message">
+            <span class="label label-default">32</span>
+        </div>
+
+
+        <div class="login-user">
+            <i class="iconfont">&#xe60d;</i>
+            <a class="javascript:;">您好！市地税局管理员</a>
+            <i class="iconfont">&#xe61c;</i>
+
+            <div class="user-opt-panel">
+                <ul class="user-opt">
+                    <li>
+                        <a href="account_center.html">
+                            <i class="iconfont">&#xe60d;</i>
+                            <span class="pf-opt-name">账户信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order.html">
+                            <i class="iconfont">&#xe60c;</i>
+                            <span class="pf-opt-name">订单信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe60f;</i>
+                            <span class="pf-opt-name">结算信息</span>
+                        </a>
+                    </li>
+                    <li class="div-line">
+                        <a href="javascript:;">
+                            <i class="iconfont">&#xe60e;</i>
+                            <span class="pf-opt-name">资产信息</span>
+                        </a>
+                    </li>
+                    <li class="div-line">
+                        <a href="login.html">
+                            <i class="iconfont">&#xe60b;</i>
+                            <span class="pf-opt-name">退出</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+    <div id="bd">
+      <div class="main-wrap-bk clearfix">
+         <div class="sider-bar-bk">
+  <div class="sider-bar-hd">
+    <i class="iconfont">&#xe616;</i>
+    <span>云服务</span>
+   </div>
+   <ul class="sider-nav">
+     <li class="sider-nav-item current">
+       <h3>
+          <a href="javascript:;">
+             <i class="iconfont">&#xe610;</i>
+             <span>云服务总览</span>
+             <i class="iconfont arrow-right">&#xe611;</i>
+             <i class="iconfont arrow-down">&#xe615;</i>
+          </a>
+       </h3>
+       <ul class="sider-nav-s">
+         <li><a href="assets.html">资产管理</a></li>
+         <li class="current"><a href="ip.html">IP资产管理</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+       </ul>
+     </li>
+
+     <li class="sider-nav-item">
+       <h3>
+          <a href="javascript:;">
+             <i class="iconfont">&#xe613;</i>
+             <span>云检测预警</span>
+             <i class="iconfont arrow-right">&#xe611;</i>
+             <i class="iconfont arrow-down">&#xe615;</i>
+          </a>
+       </h3>
+       <ul class="sider-nav-s">
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+         <li><a href="#">WEB网站检测服务</a></li>
+       </ul>
+     </li>
+   </ul>
+ </div>
+
+         <div class="bd-content-wrap">
+            <div class="bd-content">
+               <div class="title-left-line">IP资产管理</div>
+
+               <ul class="nav-tabs style2 clearfix">
+                  <li class="active"><a href="javascript:;">服务器</a></li>
+                  <li><a href="javascript:;">终端</a></li>
+                  <li><a href="javascript:;">数据库</a></li>
+                  <li><a href="javascript:;">保障设备</a></li>
+                  <li><a href="javascript:;">安全设备</a></li>
+                </ul>
+
+                <div class="ip-manage page" data-tab="data-result">
+                  
+                  <div class="search-box clearfix">
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">资产名称：</div>
+                        <div class="form-content">
+                          <input type="text" >
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">IP地址：</div>
+                        <div class="form-content">
+                          <input type="text" >
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">状态：</div>
+                        <div class="form-content">
+                          <select>
+                            <option>请选择</option>
+                            <option>正常</option>
+                            <option>关机</option>
+                            <option>死机</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">服务器类型：</div>
+                        <div class="form-content">
+                          <select>
+                            <option>请选择</option>
+                            <option>实体服务器</option>
+                            <option>虚拟主机</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label">操作系统：</div>
+                        <div class="form-content">
+                          <select>
+                            <option>请选择</option>
+                            <option>windows</option>
+                            <option>Linux</option>
+                          </select>
+                          
+                        </div>
+                      </div>
+
+                      <div class="form-kv clearfix">
+                        <div class="form-kv-label"><button class="btn btn-blue search-btn">查询</button></div>
+                      </div>
+                  </div>
+
+                  <div class="grid">
+                    <div class="grid-opt clearfix">
+                      <button class="btn btn-blue">
+                        <i class="iconfont">&#xe628;</i>
+                        <span>新增</span>
+                      </button>
+                      <button class="btn btn-default">
+                        <i class="iconfont">&#xe627;</i>
+                        <span>新增</span>
+                      </button>
+                    </div>
+
+                    <table>
+                      <colgroup>
+                        <col width="50"></col>
+                        <col width="50"></col>
+                        <col width="＊"></col>
+                        <col width="110"></col>
+                        <col width="110"></col>
+                        <col width="100"></col>
+                        <col width="100"></col>
+                        <col width="90"></col>
+                        <col width="80"></col>
+                        <col width="80"></col>
+                        <col width="80"></col>
+                        <col width="100"></col>
+                      </colgroup>
+
+                      <thead>
+                        <tr>
+                          <th class="ck"><input type="checkbox" /></th>
+                          <th>序号</th>
+                          <th>服务器名称</th>
+                          <th>服务器类型</th>
+                          <th>操作系统</th>
+                          <th>IP地址</th>
+                          <th>NAT映射</th>
+                          <th>厂家</th>
+                          <th>型号</th>
+                          <th>是否国产</th>
+                          <th>状态</th>
+                          <th>操作</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td class="ck"><input type="checkbox" /></td>
+                          <td class="num">1</td>
+                          <td>sevice_26</td>
+                          <td>实体服务器</td>
+                          <td>windows</td>
+                          <td>－</td>
+                          <td>172.0.1.26</td>
+                          <td>dell</td>
+                          <td>x720</td>
+                          <td>否</td>
+                          <td class="impInfo">异常</td>
+                          <td class="opt"><a href="javascript:;">查看</a><a href="javascript:;">修改</a></td>
+                        </tr>
+
+                      <tr>
+                          <td class="ck"><input type="checkbox" /></td>
+                          <td class="num">1</td>
+                          <td>sevice_26</td>
+                          <td>实体服务器</td>
+                          <td>windows</td>
+                          <td>－</td>
+                          <td>172.0.1.26</td>
+                          <td>dell</td>
+                          <td>x720</td>
+                          <td>否</td>
+                          <td class="impInfo">异常</td>
+                          <td class="opt"><a href="javascript:;">查看</a><a href="javascript:;">修改</a></td>
+                        </tr>
+
+                        <tr>
+                          <td class="ck"><input type="checkbox" /></td>
+                          <td class="num">1</td>
+                          <td>sevice_26</td>
+                          <td>实体服务器</td>
+                          <td>windows</td>
+                          <td>－</td>
+                          <td>172.0.1.26</td>
+                          <td>dell</td>
+                          <td>x720</td>
+                          <td>否</td>
+                          <td>正常</td>
+                          <td class="opt"><a href="javascript:;">查看</a><a href="javascript:;">修改</a></td>
+                        </tr>
+
+                        <tr>
+                          <td class="ck"><input type="checkbox" /></td>
+                          <td class="num">1</td>
+                          <td>sevice_26</td>
+                          <td>实体服务器</td>
+                          <td>windows</td>
+                          <td>－</td>
+                          <td>172.0.1.26</td>
+                          <td>dell</td>
+                          <td>x720</td>
+                          <td>否</td>
+                          <td class="impInfo">异常</td>
+                          <td class="opt"><a href="javascript:;">查看</a><a href="javascript:;">修改</a></td>
+                        </tr>
+
+                        <tr>
+                          <td class="ck"><input type="checkbox" /></td>
+                          <td class="num">1</td>
+                          <td>sevice_26</td>
+                          <td>实体服务器</td>
+                          <td>windows</td>
+                          <td>－</td>
+                          <td>172.0.1.26</td>
+                          <td>dell</td>
+                          <td>x720</td>
+                          <td>否</td>
+                          <td class="impInfo">异常</td>
+                          <td class="opt"><a href="javascript:;">查看</a><a href="javascript:;">修改</a></td>
+                        </tr>
+
+
+                        <tr>
+                          <td class="ck"><input type="checkbox" /></td>
+                          <td class="num">1</td>
+                          <td>sevice_26</td>
+                          <td>实体服务器</td>
+                          <td>windows</td>
+                          <td>－</td>
+                          <td>172.0.1.26</td>
+                          <td>dell</td>
+                          <td>x720</td>
+                          <td>否</td>
+                          <td>正常</td>
+                          <td class="opt"><a href="javascript:;">查看</a><a href="javascript:;">修改</a></td>
+                        </tr>
+
+                        <tr>
+                          <td class="ck"><input type="checkbox" /></td>
+                          <td class="num">1</td>
+                          <td>sevice_26</td>
+                          <td>实体服务器</td>
+                          <td>windows</td>
+                          <td>－</td>
+                          <td>172.0.1.26</td>
+                          <td>dell</td>
+                          <td>x720</td>
+                          <td>否</td>
+                          <td class="impInfo">异常</td>
+                          <td class="opt"><a href="javascript:;">查看</a><a href="javascript:;">修改</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="pagin pagination clearfix"></div>
+                </div>
+            </div>
+         </div>
+      </div>
+    </div>
+
+    <div class="s-page">
+        <a href="javascript:;" class="iconfont close-spage">&#xe61e;</a>
+
+        <div class="section">
+          <div class="title-left-line-b">基本信息</div>
+          <div class="section-content clearfix basic-info">
+            <div class="kv-item clearfix">
+              <div class="kv-label">主机名称：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">设备编码：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">内网ip：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">外网ip：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">责任人员：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">所属部门：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">物理位置：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title-left-line-b">扩展信息</div>
+          <div class="section-content clearfix expend-info">
+            <div class="kv-item clearfix">
+              <div class="kv-label">服务器用途：</div>
+              <div class="kv-content">
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  web服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  数据库服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  邮件服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  应用服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  证书服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  CMS服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  打印服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  文件服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  证书服务器
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  其他
+                </label>
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">设备编码：</div>
+              <div class="kv-content">
+                <label class="form-ck">
+                  <input type="radio" />
+                  是
+                </label>
+                <label class="form-ck">
+                  <input type="radio" />
+                  否
+                </label>
+              </div>
+            </div>
+
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">操作系统：</div>
+              <div class="kv-content">
+                <select>
+                  <option>请选择操作系统</option>
+                  <option>windows server</option>
+                  <option>linux</option>
+                  <option>redhat</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">设备品牌：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">设备型号：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">MAC地址：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">关键级别：</div>
+              <div class="kv-content">
+                <label class="form-ck">
+                  <input type="radio" />
+                  是
+                </label>
+                <label class="form-ck">
+                  <input type="radio" />
+                  否
+                </label>
+              </div>
+            </div>
+
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">用途说明：</div>
+              <div class="kv-content">
+                <textarea></textarea>
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">状态：</div>
+              <div class="kv-content">
+                <select>
+                  <option>启用</option>
+                  <option>禁用</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title-left-line-b">组件信息</div>
+          <div class="section-content clearfix model-info">
+            <div class="kv-item clearfix">
+              <div class="kv-label">已装组件：</div>
+              <div class="kv-content">
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  ISS
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  Tomcat
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  Apache
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  PHP
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  JAVA
+                </label>
+                <label class="form-ck">
+                  <input type="checkbox" />
+                  .NET
+                </label>
+                
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">数据库实例：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title-left-line-b">资产关联信息</div>
+          <div class="section-content clearfix re-info">
+            <div class="kv-item clearfix">
+              <div class="kv-label">所属信息系统：</div>
+              <div class="kv-content">
+                 <a href="javascript:;">单位官网</a>
+                 <button class="btn btn-default">关联</button>
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">关联数据库：</div>
+              <div class="kv-content">
+                 <a href="javascript:;">默认(192.168.0.1)</a>
+                 <button class="btn btn-default">关联</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="title-left-line-b"> 维保信息</div>
+          <div class="section-content clearfix weibao-info">
+            <div class="kv-item clearfix">
+              <div class="kv-label">采购时间：</div>
+              <div class="kv-content">
+                <div class="date-pick">
+                  <input type="text" id="starttime" >
+                  <i class="iconfont">&#xe619;</i>
+                </div>
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">维保序列号：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">维护到期时间：</div>
+              <div class="kv-content">
+                <div class="date-pick">
+                  <input type="text" id="endtime" >
+                  <i class="iconfont">&#xe619;</i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">维保单位：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">联系人员：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="kv-item clearfix">
+              <div class="kv-label">联系电话：</div>
+              <div class="kv-content">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-group">
+            <button class="btn btn-blue">提交</button>
+            <button class="btn btn-default">关闭</button>
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../js/datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.pagination.js"></script>
+    <script type="text/javascript" src="../js/select2/js/select2.min.js"></script>
+    <script type="text/javascript">
+
+        $("#starttime").datepicker({
+          "language":"zh-CN",
+          "format": 'yyyy-mm-dd'
+        })
+        $("#endtime").datepicker({
+            "language":"zh-CN",
+            "format": 'yyyy-mm-dd'
+        })
+        $(".date-pick .iconfont").click(function(){
+            $(this).prev().trigger("focus");
+        });
+
+        $('.pagin').pagination(200, {
+          current_page: 5,
+          items_per_page: 10,
+          callback: function(page, panel, evt){
+            
+            
+          }
+        });
+
+        $('table').on('click', 'a', function() {
+           $('.s-page').show();
+        });
+
+        $('.s-page').on('click', '.close-spage', function() {
+           $('.s-page').hide();
+        });
+
+        $('select').select2();
+
+        
+    
+    </script>
+</body>
+</html>
